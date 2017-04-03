@@ -15,6 +15,7 @@
     <script src="res/js/typed.js"></script>
     <script src="res/js/particles.js"></script>
     <script src="res/js/zenscroll-min.js"></script>
+    <script src="res/js/viewPortChecker.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="res/css/animate.css">
     <link rel="stylesheet" href="res/css/main.css">
@@ -38,20 +39,22 @@
 <div id="skills" class="container-fluid">
     <div class="col-sm-8 col-sm-offset-2 center">
         <div class="row">
-            <img src="res/icons/developer-icon-128.png" alt="developer-image">
-            <p class="para-title"> Development </p>
-            <p> I turn great coffee and great ideas into reality through elegant code. <p>
-            <p class="op"> Languages: Java, PHP, Python, HTML, CSS, Javascript, SQL </p>
-            <p class="op"> Frameworks: LibGDX, Laravel, Bootstrap </p>
-            <p class="op"> Other: Git </p>
+            <div class="viewport">
+                <img src="res/icons/developer-icon-128.png" alt="developer-image">
+                <p class="para-title"> Development </p>
+                <p> I turn great coffee and great ideas into reality through elegant code. <p>
+                <p class="op"> Languages: Java, PHP, Python, HTML, CSS, Javascript, SQL </p>
+                <p class="op"> Frameworks: LibGDX, Laravel, Bootstrap </p>
+                <p class="op"> Other: Git </p>
+            </div>
         </div><!--END row-->
         <div class="row">
-            <div class="down-space col-md-6">
+            <div class="viewport down-space col-md-6">
                 <img class="down-space" src="res/icons/responsive-design-128.png" alt="designer-image">
                 <p class="para-title"> Design </p>
                 <p> Beautiful code is nothing without great design. I design gorgeous, responsive applications. </p>
             </div>
-            <div class="col-md-6">
+            <div class="viewport col-md-6">
                 <img id="space" class="down-space" src="res/icons/learning-icon-128.png" alt="travel-image">
                 <p class="para-title"> Learning </p>
                 <p> Learning is my passion. I read everything I can get my hands on, and push myself to learn new skills to add to my repertoire.</p>
@@ -76,6 +79,16 @@
         });
     });
 </script>
+<script>
+$(document).ready(function() {
+    $('.viewport').addClass("viewport").viewportChecker({
+        classToAdd: "visible animated fadeInUp",
+        classToRemove: "viewport",
+        offset: 100
+       });
+});
+</script>
+
 <script src="res/js/app.js"></script>
 <!--<script>
 window.onload = function(){

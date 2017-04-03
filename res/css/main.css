@@ -47,6 +47,18 @@
     -moz-animation-delay: 8s;
 }
 
+.viewport{
+	opacity: 0;
+}
+
+.visible{
+	opacity: 1;
+	-webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0.5s;
+}
+
 #second{
 	background-color: #F0F3F5;
 	padding-top: 50px;
@@ -97,8 +109,6 @@ p{
 }
 
 
-
-
 @keyframes MoveDown{
 	0%{
 		bottom: 0;
@@ -130,6 +140,7 @@ p{
 	-moz-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
 }
+
 @keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
