@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="Description" content="Mohanad Al Sayegh's personal website.">
+    <meta name="theme-color" content="#00BFFF">
+    <title>I Am Mohanad</title>
+
+    <link rel="icon" type="image/x-icon" href="res/icons/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="res/js/typed.js"></script>
+    <script src="res/js/particles.js"></script>
+    <script src="res/js/zenscroll-min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="res/css/animate.css">
+    <link rel="stylesheet" href="res/css/main.css">
+</head>
+<body>
+<!--<div id="particles"></div>-->
+<div id="particles" class="container-fluid">
+    <div class="brand">
+      <div id="starter">I am <span class="element" id="name"></span></div>
+      <div id="subtitle" class="animated fadeIn">Developer | Designer</div>
+    </div>
+    <div id="chevron-down-white" ><a href="#skills"><img src="res/icons/ic_scroll_down_white_48dp.png"></a></div>
+</div><!--END container-->
+<div id="second" class="container-fluid">
+    <div class="col-sm-8 col-sm-offset-2 center">
+        <p class="para-title"> Hello stranger! <p>          
+        <p> I am a Computer Science student at Queen Mary, University of London.</p>
+        <p> I enjoy calisthenics, reading, travelling and of course coding! </p>
+    </div>
+</div><!--END container-->
+<div id="skills" class="container-fluid">
+    <div class="col-sm-8 col-sm-offset-2 center">
+        <div class="row">
+            <img src="res/icons/developer-icon-128.png" alt="developer-image">
+            <p class="para-title"> Development </p>
+            <p> I turn great coffee and great ideas into reality through elegant code. <p>
+            <p class="op"> Languages: Java, PHP, Python, HTML, CSS, Javascript, SQL </p>
+            <p class="op"> Frameworks: LibGDX, Laravel, Bootstrap </p>
+            <p class="op"> Other: Git </p>
+        </div><!--END row-->
+        <div class="row">
+            <div class="down-space col-md-6">
+                <img class="down-space" src="res/icons/responsive-design-128.png" alt="designer-image">
+                <p class="para-title"> Design </p>
+                <p> Beautiful code is nothing without great design. I design gorgeous, responsive applications. </p>
+            </div>
+            <div class="col-md-6">
+                <img id="space" class="down-space" src="res/icons/learning-icon-128.png" alt="travel-image">
+                <p class="para-title"> Learning </p>
+                <p> Learning is my passion. I read everything I can get my hands on, and push myself to learn new skills to add to my repertoire.</p>
+            </div>
+        </div><!--END row-->
+        <div class="row">
+        </div><!--END row-->
+    </div>
+</div><!--END container-->
+<footer class="footer">
+         <p class="text-muted text-center">Made with Love, Hate and Coffee by Mohanad.</p>
+    </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        Typed.new(".element", {
+            strings: ["a developer^50.", "a designer^50.", "Mohanad^250."],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: false,
+            backDelay: 1000,
+            startDelay: 1000
+        });
+    });
+</script>
+<script src="res/js/app.js"></script>
+<!--<script>
+window.onload = function(){
+    startAnimation("subtitle", "fadeIn", 8000);
+}
+
+
+function startAnimation(elementId, animationName, sleepTime){
+    if(sleepTime === undefined){
+        sleepTime = 0;
+    }
+    setTimeout(function(){
+        animate(elementId, animationName);
+    }, sleepTime);
+}
+
+function animate(elementId, animationName){
+    document.getElementById(elementId).className += " "+animationName;
+}
+</script>-->
+
+</body>
+</html>
